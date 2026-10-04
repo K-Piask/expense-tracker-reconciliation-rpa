@@ -17,12 +17,13 @@ Skrypt RPA pełni rolę klienta dla backendu opartego na Node.js, wykorzystując
 * **Przetwarzanie Danych:** In-memory DataTables
 
 ## 🎥 Demo Wideo
+https://github.com/user-attachments/assets/699a286b-f7f5-4c33-ae8a-3aecf1de725e
 
 ## 📸 Logika Procesu
 Poniżej znajduje się zapytanie LINQ odpowiedzialne za szybką walidację danych w pamięci:
 
 ```vb.net
-(json_ExpensesArray.AsEnumerable().Any(Function(exp) Val(exp("totalAmount").ToString) = Val(CurrentRow("Amount").ToString.Replace(",",".")) AndAlso exp.SelectToken("category.name") IsNot Nothing AndAlso CurrentRow("Description").ToString.ToLower().Contains(exp.SelectToken("category.name").ToString.ToLower())))
+json_ExpensesArray.AsEnumerable().Any(Function(exp) Val(exp("totalAmount").ToString) = Val(CurrentRow("Amount").ToString.Replace(",",".")) AndAlso exp.SelectToken("category.name") IsNot Nothing AndAlso CurrentRow("Description").ToString.ToLower().Contains(exp.SelectToken("category.name").ToString.ToLower()))
 ```
 
 ## 🚀 Jak to działa
