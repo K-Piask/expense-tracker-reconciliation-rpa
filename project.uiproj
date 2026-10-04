@@ -1,0 +1,6 @@
+{
+  "Name": "BankReconciliationBot",
+  "ProjectType": "Process",
+  "Description": "",
+  "MainFile": "Main.xaml"
+}
