@@ -5,7 +5,7 @@
 ## 🎯 Cel Projektu
 Ręczne porównywanie wyciągów bankowych z bazą danych jest uciążliwe i podatne na błędy. Ten bot RPA automatyzuje ten proces - pobiera na żywo dane z API REST (tego samego, z którym komunikuje się frontend webowy), porównuje je z wyciągami w formacie Excel i generuje końcowy raport. 
 
-Co kluczowe, bot potrafi wyłapać **błędy ludzkie** (np. złe przypisanie kategorii w systemie) dzięki mechanizmowi Fuzzy Matching. Robi to w pamięci operacyjnej za pomocą zapytań LINQ, by nie obciążać API.
+Co kluczowe, bot potrafi wyłapać **błędy ludzkie** (np. złe przypisanie kategorii w systemie) dzięki mechanizmowi elastycznego dopasowywania tekstu. Robi to w pamięci operacyjnej za pomocą zapytań LINQ, by nie obciążać API.
 
 ## ⚙️ Architektura i Technologie
 Skrypt RPA pełni rolę klienta dla backendu opartego na Node.js, wykorzystując dynamiczne logowanie za pomocą tokenów.
